@@ -1,0 +1,8 @@
+C:\Users\UTSAV\Desktop\bakery-asp\bakery\bakery\bin\bakery.dll
+C:\Users\UTSAV\Desktop\bakery-asp\bakery\bakery\bin\bakery.pdb
+C:\Users\UTSAV\Desktop\bakery-asp\bakery\bakery\bin\bakery.xml
+C:\Users\UTSAV\Desktop\bakery-asp\bakery\bakery\obj\Debug\bakery.Resources.resources
+C:\Users\UTSAV\Desktop\bakery-asp\bakery\bakery\obj\Debug\bakery.vbproj.GenerateResource.Cache
+C:\Users\UTSAV\Desktop\bakery-asp\bakery\bakery\obj\Debug\bakery.dll
+C:\Users\UTSAV\Desktop\bakery-asp\bakery\bakery\obj\Debug\bakery.xml
+C:\Users\UTSAV\Desktop\bakery-asp\bakery\bakery\obj\Debug\bakery.pdb

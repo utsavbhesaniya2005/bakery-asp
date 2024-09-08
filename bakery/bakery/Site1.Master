@@ -1,0 +1,178 @@
+﻿    <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="bakery.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Bakery Management System</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="shortcut icon" href="~/Images/home/logo/fav-icon.png" type="image/x-icon">
+
+        <!-- fonts -->
+        <link rel="stylesheet" href="~/Styles/font.css">
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="~/Styles/all.min.css">
+
+        <!-- Slider Css -->
+        <link rel="stylesheet" href="~/Styles/swiper-bundle.min.css">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="~/Styles/bootstrap.min.css" />
+
+        <!-- Css -->
+        <link rel="stylesheet" href="~/Styles/style.css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 330px;
+        }
+    </style>
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <form id="form2" runat="server">
+         <div>
+        
+            <table class="style1" style="width: 100%;">
+                <tr style="width: 100%;">
+                    <td>
+                        <table class="style1" frame="box" style="border: 5px solid #5798b0; width: 100%;">
+                            <tr>
+                                <td class="style2" bgcolor="#333333">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Image ID="Image1" runat="server" Height="67px" 
+                                        ImageUrl="~/images/home/logo/logo.png" Width="223px" />
+                                </td>
+                                <td bgcolor="#5798B0" style="text-align: left" class="style6">
+                                    <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Label ID="Label1" runat="server" Font-Names="Segoe UI Semibold" 
+                                        Font-Size="XX-Large" ForeColor="White" Text="Bakery Management System" 
+                                        Font-Bold="True"></asp:Label>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Names="Algerian" 
+                                        Font-Size="26px" ForeColor="White"></asp:Label>
+                                    <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <br />
+                                </td>
+                            </tr>
+                          </table>
+                            <tr style="width: 100%;">
+                                <td bgcolor="#5798B0" class="style3">
+                                    </td>
+                                <td class="style3">
+                                    </td>
+                            </tr>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style4">
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                            MaximumDynamicDisplayLevels="5" style="text-align: center">
+                            <Items>
+                                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="~/contact.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="About" Value="About" NavigateUrl="~/about.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Gallery" Value="Gallery" NavigateUrl="~/gallery.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Add Product" Value="Add Product" 
+                                    NavigateUrl="~/addproduct.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Register" Value="Register" NavigateUrl="~/register.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/login.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="White" Font-Bold="True" ForeColor="#5798B0" />
+                            <StaticMenuItemStyle BackColor="#5798B0" 
+                                Font-Names="Bahnschrift SemiLight SemiConde" Font-Size="26px" ForeColor="White" 
+                                HorizontalPadding="65px" VerticalPadding="25px"/>
+                            <StaticMenuStyle BorderColor="#5798B0" BorderWidth="1px" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style1">
+                        </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#5798B0" class="style5" style="text-align: center">
+                        <asp:Label ID="Label2" runat="server" Font-Bold="True" 
+                            Font-Names="Segoe UI Variable Display" Font-Size="20px" ForeColor="White" 
+                            Text="All Rights Reserved By Utsav "></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        
+        </div>
+    </form>
+    </asp:ContentPlaceHolder>
+
+
+    <script src="../Js/bootstrap.bundle.min.js"></script>
+
+    <!-- Jquery -->
+        <script src="../Js/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+            });
+        </script>
+
+        <!-- Slider Js -->
+        <script src="../Js/swiper-bundle.min.js"></script>
+        <script>
+            // Features Slider
+            const swiper = new Swiper('.swiper', {
+                   // Optional parameters
+                   direction: 'horizontal',
+                   loop: true,
+                   slidesPerView: 4,
+                   spaceBetween: 30,
+                   autoplay: true,
+
+                   // Navigation arrows
+                   navigation: {
+                       nextEl: '.swiper-button-next',
+                       prevEl: '.swiper-button-prev',
+                   },
+               });
+        </script>
+        <script>
+            // Testimonial Slider
+            const swiper1 = new Swiper('.swiper-1', {
+               // Optional parameters
+               direction: 'horizontal',
+               loop: true,
+               slidesPerView: 1,
+               spaceBetween: 30,
+               speed: 2000,
+               autoplay: true,
+
+               // Navigation arrows
+               navigation: {
+                   nextEl: '.testimonial-btn-right',
+                   prevEl: '.testimonial-btn-left',
+               },
+           });
+        </script>  
+        <script>
+            // Special Recipe Slider
+            var recipe = new Swiper(".mySwiper", {
+                direction: "horizontal",
+                autoplay: true,
+                loop: true,
+                speed: 2000,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+       </script>
+</body>
+</html>

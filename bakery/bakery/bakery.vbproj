@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{E451AA39-405D-43AF-9BA2-42B8D6A4A00C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>bakery</RootNamespace>
+    <AssemblyName>bakery</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bakery.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bakery.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="Images\aboutus\b-approach\b-approach.png" />
+    <Content Include="Images\aboutus\b-approach\b-approach1.png" />
+    <Content Include="Images\aboutus\b-approach\b-approach2.png" />
+    <Content Include="Images\aboutus\banner\about-bg.png" />
+    <Content Include="Images\aboutus\client\client-2.png" />
+    <Content Include="Images\aboutus\real-taste\r-taste-bg.png" />
+    <Content Include="Images\bread\Bagel Nosh.jpg" />
+    <Content Include="Images\bread\bread.jpg" />
+    <Content Include="Images\bread\bred-2.jpg" />
+    <Content Include="Images\bread\chese bread.jpg" />
+    <Content Include="Images\chocolate\Almond Candy.jpg" />
+    <Content Include="Images\chocolate\Bars choco chocolate.png" />
+    <Content Include="Images\chocolate\Choco balls.png" />
+    <Content Include="Images\chocolate\Choco Creme &amp; Nut.jpg" />
+    <Content Include="Images\chocolate\Chocolate Truffle.jpg" />
+    <Content Include="Images\chocolate\chocolate-2.png" />
+    <Content Include="Images\chocolate\chocolate-3.png" />
+    <Content Include="Images\chocolate\chocolate-4.png" />
+    <Content Include="Images\chocolate\Chocolate-5.png" />
+    <Content Include="Images\chocolate\chocolate.png" />
+    <Content Include="Images\chocolate\Creme Brulle.jpg" />
+    <Content Include="Images\chocolate\Praline with Nut.jpg" />
+    <Content Include="Images\chocolate\Praline with Plum.jpg" />
+    <Content Include="Images\chocolate\Suffle Candy.jpg" />
+    <Content Include="Images\home\banner\slider-1.png" />
+    <Content Include="Images\home\banner\slider-2.png" />
+    <Content Include="Images\home\blogs\blog-1.png" />
+    <Content Include="Images\home\blogs\blog-2.png" />
+    <Content Include="Images\home\blogs\blog-3.png" />
+    <Content Include="Images\home\chefs\chef-1.png" />
+    <Content Include="Images\home\chefs\chef-2.png" />
+    <Content Include="Images\home\chefs\chef-3.png" />
+    <Content Include="Images\home\clients\client-1.png" />
+    <Content Include="Images\home\discover\discover-left.png" />
+    <Content Include="Images\home\discover\discover-right.png" />
+    <Content Include="Images\home\features-cake\feature-cake-1.png" />
+    <Content Include="Images\home\features-cake\feature-cake-2.png" />
+    <Content Include="Images\home\features-cake\feature-cake-3.png" />
+    <Content Include="Images\home\features-cake\feature-cake-4.png" />
+    <Content Include="Images\home\latest-blogs\blog-1.png" />
+    <Content Include="Images\home\latest-blogs\blog-2.png" />
+    <Content Include="Images\home\latest-blogs\blog-3.png" />
+    <Content Include="Images\home\logo\fav-icon.png" />
+    <Content Include="Images\home\logo\header-shape.png" />
+    <Content Include="Images\home\logo\logo.png" />
+    <Content Include="Images\home\recipies\recipe-1.png" />
+    <Content Include="Images\home\recipies\recipe-2.png" />
+    <Content Include="Images\home\recipies\recipe-3.png" />
+    <Content Include="Images\home\recipies\recipe-4.png" />
+    <Content Include="Images\home\recipies\recipe-bg.png" />
+    <Content Include="Images\home\services\cake.svg" />
+    <Content Include="Images\home\services\muffin.svg" />
+    <Content Include="Images\home\services\pie.svg" />
+    <Content Include="Images\home\services\service-bg.png" />
+    <Content Include="Images\home\welcome\left-shape.png" />
+    <Content Include="Images\home\welcome\right-shape.png" />
+    <Content Include="Images\home\welcome\welcome-bg.png" />
+    <Content Include="Images\home\welcome\welcome.png" />
+    <Content Include="Images\login\login-bg.mp4" />
+    <Content Include="Images\product_page\add.png" />
+    <Content Include="Images\product_page\c1.png" />
+    <Content Include="Images\product_page\heart.png" />
+    <Content Include="Images\product_page\views.png" />
+    <Content Include="Js\bootstrap.bundle.min.js" />
+    <Content Include="Js\jquery.min.js" />
+    <Content Include="Js\swiper-bundle.min.js" />
+    <Content Include="login.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="about.aspx" />
+    <Content Include="addproduct.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="gallery.aspx" />
+    <Content Include="Styles\about.css" />
+    <Content Include="Styles\all.min.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\font.css" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Styles\product.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\swiper-bundle.min.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.designer.vb">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.vb">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="register.aspx.designer.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about.aspx.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="addproduct.aspx.designer.vb">
+      <DependentUpon>addproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addproduct.aspx.vb">
+      <DependentUpon>addproduct.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="gallery.aspx.designer.vb">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gallery.aspx.vb">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <None Include="Fonts\lora-v35-latin-500.woff2" />
+    <None Include="Fonts\lora-v35-latin-600.woff2" />
+    <None Include="Fonts\lora-v35-latin-700.woff2" />
+    <None Include="Fonts\lora-v35-latin-regular.woff2" />
+    <None Include="Fonts\open-sans-v40-latin-300.woff2" />
+    <None Include="Fonts\open-sans-v40-latin-500.woff2" />
+    <None Include="Fonts\open-sans-v40-latin-600.woff2" />
+    <None Include="Fonts\open-sans-v40-latin-700.woff2" />
+    <None Include="Fonts\open-sans-v40-latin-800.woff2" />
+    <None Include="Fonts\open-sans-v40-latin-regular.woff2" />
+    <None Include="Fonts\poppins-v21-latin-100.woff2" />
+    <None Include="Fonts\poppins-v21-latin-200.woff2" />
+    <None Include="Fonts\poppins-v21-latin-300.woff2" />
+    <None Include="Fonts\poppins-v21-latin-500.woff2" />
+    <None Include="Fonts\poppins-v21-latin-600.woff2" />
+    <None Include="Fonts\poppins-v21-latin-700.woff2" />
+    <None Include="Fonts\poppins-v21-latin-800.woff2" />
+    <None Include="Fonts\poppins-v21-latin-900.woff2" />
+    <None Include="Fonts\poppins-v21-latin-regular.woff2" />
+    <None Include="Images\cake\Anniversary Surprise Chocolate Pinata Ball Cake.webp" />
+    <None Include="Images\cake\black-and-white-teddy-bear-cake.webp" />
+    <None Include="Images\cake\choco-almond-feast-loaf-cake.webp" />
+    <None Include="Images\cake\Decadent Dark Chocolate Cake-2.webp" />
+    <None Include="Images\cake\Decadent Dark Chocolate Cake.webp" />
+    <None Include="Images\cake\Delicious Rasmalai Cake-2.webp" />
+    <None Include="Images\cake\Delicious Rasmalai Cake.webp" />
+    <None Include="Images\cake\delightful-and-delicious-fruit-cake.webp" />
+    <None Include="Images\cake\delish-motichoor-ladoo-cake.webp" />
+    <None Include="Images\cake\hazelnut-crunch-cake.webp" />
+    <None Include="Images\cake\jack-daniels-chocolate-cake.webp" />
+    <None Include="Images\cake\Lion Face Cake.webp" />
+    <None Include="Images\cake\minnie-mouse-pinata-cake.webp" />
+    <None Include="Images\cake\ricket-field-semi-fondant-birthday-cake.webp" />
+    <None Include="Images\cake\Tropical Fruit Cake.avif" />
+    <None Include="Images\cup-cake\Australia-Dark-Chocolate-cap-cake.webp" />
+    <None Include="Images\cup-cake\C.webp" />
+    <None Include="Images\cup-cake\cup-cake-1.webp" />
+    <None Include="Images\cup-cake\cup-cake-3.webp" />
+    <None Include="Images\cup-cake\cup-cake-4.webp" />
+    <None Include="Images\cup-cake\cup-cake-5.webp" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site1.Master" />
+    <None Include="webfonts\fa-brands-400.ttf" />
+    <None Include="webfonts\fa-brands-400.woff2" />
+    <None Include="webfonts\fa-regular-400.ttf" />
+    <None Include="webfonts\fa-regular-400.woff2" />
+    <None Include="webfonts\fa-solid-900.ttf" />
+    <None Include="webfonts\fa-solid-900.woff2" />
+    <None Include="webfonts\fa-v4compatibility.ttf" />
+    <None Include="webfonts\fa-v4compatibility.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54078</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
